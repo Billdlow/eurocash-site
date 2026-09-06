@@ -26,4 +26,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://billdlow.github.io/eurocash-site/
+Sitemap: https://billdlow.github.io/eurocash-site/sitemap.xml
