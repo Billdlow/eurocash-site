@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>歐元短期政府公債 ETF 比較:PRAB、XEON/CSH2、EXVM 費用與風險全解析</title>
+<meta name="description" content="比較三檔主流歐元短期政府公債/現金停泊 ETF——Amundi PRAB、Xtrackers XEON/CSH2、iShares EXVM——的費用率、規模、複製方式與信用風險，附完整數據表與常見問題。">
+<meta name="author" content="EuroCash 觀測站">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EuroCash 觀測站",
+  "url": "https://example.com",
+  "description": "獨立整理歐元區短期固定收益 ETF 公開資訊的研究站，聚焦費用率、規模與複製方式的橫向比較。"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "歐元短期政府公債 ETF 比較:PRAB、XEON/CSH2、EXVM 費用與風險全解析",
+  "author": {
+    "@type": "Organization",
+    "name": "EuroCash 觀測站"
+  },
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "about": ["歐元短期政府公債 ETF", "PRAB", "XEON", "CSH2", "EXVM", "現金停泊工具"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "PRAB、XEON、EXVM 這三檔歐元短期公債 ETF 差在哪裡？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "三者都用來停泊歐元現金賺取短期利率，但底層資產與風險來源不同。PRAB 直接持有歐元區多國政府公債，费用率最低（0.05%）；XEON/CSH2 用衍生性合約複製歐元隔夜利率（€STR），不直接持有公債，因此多一層交易對手風險；EXVM 只持有德國政府公債，信用風險最低但費用略高（0.13%）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "哪一檔歐元現金停泊 ETF 費用率最低？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "以總費用率（TER）比較，Amundi PRAB 目前最低，為 0.05%；Xtrackers XEON/CSH2 為 0.10%；iShares EXVM 為 0.13%。費用率最低不代表適合所有情境，仍需搭配風險偏好判斷。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "什麼是合成複製（Synthetic Replication）？跟直接持有公債有什麼差別？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "合成複製是指 ETF 不直接持有標的資產，而是透過與銀行簽訂交換（swap）合約來複製指數報酬，例如 XEON/CSH2 複製歐元隔夜利率。這種做法流動性通常較好、規模較大，但投資人多承擔一層交易對手（swap 對手銀行）違約的風險。相對地，PRAB 與 EXVM 採實物複製，直接持有公債本身，沒有這層風險。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "這類超短期政府公債 ETF 適合什麼用途？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "這類 ETF 主要用於停泊短期閒置現金、賺取接近央行政策利率的報酬，波動度極低，不是用來追求資本增值的工具。常見情境包括等待資金部署、緊急預備金停泊，或作為投資組合中的低風險緩衝部位。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PRAB 的公債集中在哪些國家？信用風險高嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PRAB 持有歐元區多國政府公債，其中義大利公債占比約 27%，其餘分散在法國、德國、西班牙等國。整體仍屬投資等級，但信用風險略高於只押注德國公債的 EXVM，這是它費用率較低的部分原因。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "現在停泊歐元現金的報酬大概是多少？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "報酬直接跟著 ECB 存款機制利率走。該利率在 2023 年 9 月見頂於 4.00%，2024 年 6 月至 2025 年 6 月間累計降息八次、共 200 個基點，來到 2.00%，並持續維持在這個水準。因此這三檔 ETF 目前的年化報酬大致會落在略低於 2.00% 的區間（扣除各自費用率之後），會隨 ECB 未來的利率決策而變動。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "TER 費用率最低的 ETF，實際持有成本一定最低嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。TER 只反映管理費用，實際持有成本還包含追蹤誤差與買賣價差。規模較小、成交量較低的 ETF，買賣價差可能較大，如果使用情境是頻繁進出而非長期持有，這部分成本可能抵銷掉 TER 較低帶來的優勢。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "這三檔 ETF 都是累積型還是配息型？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "三檔目前主要股別都是累積型（Accumulating），利息收益會自動再投資到基金淨值裡，不會定期發放現金股利。需要定期現金流的投資人需另外確認發行商是否提供配息型股別。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --paper: #FAF8F3;
+    --paper-raised: #F2EEE4;
+    --ink: #1E2A38;
+    --ink-soft: #4A5A68;
+    --ledger: #3A6B64;
+    --ledger-deep: #2A5450;
+    --amber: #B8863E;
+    --hairline: #D8D2C0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, 'Noto Serif TC', serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .data, table, .stat-value, code {
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+  }
+
+  header {
+    border-bottom: 1px solid var(--hairline);
+    padding: 3rem 1.5rem 2.5rem;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  header .kicker {
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.8rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.35;
+    margin: 0 0 1rem;
+    font-weight: 600;
+    max-width: 22ch;
+  }
+
+  header p.dek {
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 0;
+  }
+
+  .ticker {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--hairline);
+    background: var(--paper-raised);
+    margin: 2.5rem 0;
+    flex-wrap: wrap;
+  }
+
+  .ticker div {
+    flex: 1 1 33%;
+    min-width: 180px;
+    padding: 1.3rem 1.4rem;
+    border-right: 1px solid var(--hairline);
+  }
+  .ticker div:last-child { border-right: none; }
+
+  .ticker .name {
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.4rem;
+  }
+
+  .ticker .stat-value {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--ledger-deep);
+    letter-spacing: -0.02em;
+  }
+
+  .ticker .lowest .stat-value { color: var(--amber); }
+  .ticker .lowest .name::after {
+    content: " · 費用最低";
+    color: var(--amber);
+  }
+
+  main { padding: 0 1.5rem 4rem; }
+
+  section { margin: 3rem 0; }
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  p { max-width: 68ch; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    margin: 1.5rem 0;
+  }
+
+  caption {
+    text-align: left;
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.6rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  th {
+    color: var(--ink-soft);
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  td:first-child, th:first-child { padding-left: 0; }
+
+  .risk-note {
+    background: var(--paper-raised);
+    border-left: 3px solid var(--ledger);
+    padding: 1rem 1.3rem;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  .faq-item {
+    margin-bottom: 1.8rem;
+  }
+
+  .faq-item h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+
+  .faq-item p {
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  footer {
+    border-top: 1px solid var(--hairline);
+    padding: 2rem 1.5rem;
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+
+  footer .wrap p { max-width: none; }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.6rem; }
+    .ticker div { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--hairline); }
+    .ticker div:last-child { border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">EuroCash 觀測站 · 固定收益 ETF 研究</div>
+    <h1>歐元短期政府公債 ETF 完整比較</h1>
+    <p class="dek">PRAB、XEON/CSH2、EXVM 三檔停泊歐元現金的主流 ETF，費用率、規模、複製方式與信用風險逐一拆解。</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="ticker">
+      <div class="lowest">
+        <div class="name">PRAB（Amundi）</div>
+        <div class="stat-value">0.05%</div>
+      </div>
+      <div>
+        <div class="name">XEON / CSH2（Xtrackers）</div>
+        <div class="stat-value">0.10%</div>
+      </div>
+      <div>
+        <div class="name">EXVM（iShares）</div>
+        <div class="stat-value">0.13%</div>
+      </div>
+    </div>
+
+    <section id="overview">
+      <h2>三檔 ETF 一次看懂</h2>
+      <p>這三檔 ETF 都用來停泊短期歐元現金、賺取接近央行政策利率的報酬，波動度極低，但底層資產與風險來源完全不同。理解差異的關鍵不在報酬率（反正都是拿短天期利率），而在於你願意承擔哪一種風險。</p>
+      <p><strong>PRAB</strong>（Amundi Prime Euro Gov Bonds 0-1Y UCITS ETF）直接持有歐元區政府公債，到期日介於 1 到 12 個月之間，採實物複製，是三者中費用率最低的選項。<strong>XEON / CSH2</strong>（Xtrackers II EUR Overnight Rate Swap UCITS ETF）追蹤歐元隔夜利率（€STR），透過交換合約（swap）合成複製，不直接持有公債本身。<strong>EXVM</strong>（iShares eb.rexx Government Germany 0-1yr UCITS ETF）只鎖定德國政府公債，同樣採實物複製，是三者中信用風險最低、但費用最高的選項。</p>
+    </section>
+
+    <section id="macro">
+      <h2>為什麼現在會有這麼多人在意「停泊現金」這件事</h2>
+      <p>這類 ETF 的報酬直接掛鉤歐洲央行（ECB）的政策利率，理解利率所在的位置，才能判斷現在停泊現金的報酬是「甜」還是「淡」。ECB 的存款機制利率（Deposit Facility Rate）在 2023 年 9 月見頂於 4.00%，這是歐元區史上最高水準；隨後從 2024 年 6 月開始一路調降，到 2025 年 6 月已累計降息八次、共 200 個基點，來到 2.00%，並自此暫停調整，市場普遍預期會維持在這個水準到 2026 年底。</p>
+      <p>這代表這三檔 ETF 目前能提供的報酬，大致會落在略低於 2.00% 的區間（扣除費用率之後），比 2023 年高峰期的 3% 以上明顯降溫，但仍高於過去十年零利率甚至負利率時期的水準。換句話說，「把閒錢停在這類 ETF 裡」這個策略的吸引力，本質上跟著 ECB 的利率循環走，不是一個恆常不變的報酬保證。</p>
+    </section>
+
+    <section id="who">
+      <h2>誰適合用哪一檔？三種常見情境</h2>
+      <p><strong>短期閒置資金、想要成本最低的個人投資者</strong>：如果你的資金會在幾個月內部署到別的用途（例如等待買房頭期款到位、或是季節性收支落差），PRAB 的低費用率（0.05%）在持有期不長的情況下，累積成本差異最小，是三者中最直覺的預設選項。</p>
+      <p><strong>看重流動性、可能需要頻繁進出的使用者</strong>：XEON/CSH2 約 €200 億的規模是三者中最大的，交易量與買賣價差通常也最有利，如果你的使用情境是頻繁調度資金、需要在市場劇烈波動時也能順利成交，流動性優勢可能比費用率的些微差異更重要——前提是你能接受多一層交易對手風險。</p>
+      <p><strong>極度厭惡信用風險、把「本金安全」放在第一位的使用者</strong>：EXVM 只押注德國公債，是三者中信用風險最低的選擇。適合的情境是機構的保守現金管理政策明確要求最高信用評等標的，或個人投資者主觀上就是不想承擔義大利公債占比或交易對手風險，願意為此多付一點費用。</p>
+    </section>
+
+    <section id="hidden-costs">
+      <h2>追蹤誤差與買賣價差：TER 沒告訴你的成本</h2>
+      <p>總費用率（TER）只是成本的一部分，實際持有成本還有兩個容易被忽略的變數。</p>
+      <p><strong>追蹤誤差（Tracking Difference）</strong>：ETF 實際報酬跟其追蹤標的之間的落差，通常會比官方公告的 TER 再高一些，原因包括交易成本、現金拖累等因素。長期持有前，建議直接查發行商官網公布的歷史追蹤誤差數據，而不是只看 TER 這個單一數字。</p>
+      <p><strong>買賣價差（Bid-Ask Spread）</strong>：如果你會頻繁買賣（而不是買入後長期持有），實際交易時的買賣價差可能是比 TER 更直接的成本。一般來說，規模越大、成交量越高的 ETF（例如 XEON/CSH2），價差通常會比規模較小的 ETF 更窄，這也是為什麼有些機構投資人會為了流動性犧牲一點費用率。</p>
+      <p><strong>交易對手風險的實際規範</strong>：對於 XEON/CSH2 這類合成複製 ETF，UCITS 規範本身就限制單一交易對手的曝險不得超過基金淨值的 10%，且多數發行商會採用每日盯市（daily mark-to-market）與超額擔保品機制降低風險。這不代表風險完全消失，但代表這層風險是在受監管框架下被限縮的，不是無上限的曝險。</p>
+    </section>
+
+    <section id="comparison-table">
+      <h2>費用、規模與複製方式比較</h2>
+      <table>
+        <caption>資料截至 2026 年 9 月，實際數字請以發行商官網公告為準</caption>
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>PRAB</th>
+            <th>XEON / CSH2</th>
+            <th>EXVM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>發行商</td>
+            <td>Amundi</td>
+            <td>Xtrackers（DWS）</td>
+            <td>iShares（BlackRock）</td>
+          </tr>
+          <tr>
+            <td>追蹤標的</td>
+            <td>歐元區政府公債，到期日 1-12 個月</td>
+            <td>歐元隔夜利率（€STR）</td>
+            <td>德國政府公債，到期日 0-1 年</td>
+          </tr>
+          <tr>
+            <td>總費用率（TER）</td>
+            <td>0.05%</td>
+            <td>0.10%</td>
+            <td>0.13%</td>
+          </tr>
+          <tr>
+            <td>基金規模</td>
+            <td>約 €6.8 億</td>
+            <td>約 €200 億</td>
+            <td>約 €18 億</td>
+          </tr>
+          <tr>
+            <td>複製方式</td>
+            <td>實物複製</td>
+            <td>合成複製（swap）</td>
+            <td>實物複製</td>
+          </tr>
+          <tr>
+            <td>主要風險來源</td>
+            <td>多國主權信用風險（義大利占比約 27%）</td>
+            <td>交易對手（swap 對手銀行）風險</td>
+            <td>德國主權信用風險（風險最低）</td>
+          </tr>
+          <tr>
+            <td>配息政策</td>
+            <td>累積型（Acc）</td>
+            <td>累積型（Acc）</td>
+            <td>累積型（Acc）</td>
+          </tr>
+          <tr>
+            <td>基金註冊地</td>
+            <td>盧森堡/愛爾蘭（依股別而定）</td>
+            <td>愛爾蘭</td>
+            <td>愛爾蘭</td>
+          </tr>
+          <tr>
+            <td>掛牌交易所</td>
+            <td>倫敦、Euronext、Xetra 等多地掛牌</td>
+            <td>倫敦、Xetra、Euronext 等多地掛牌</td>
+            <td>倫敦、Xetra 等多地掛牌</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="color:var(--ink-soft); font-size:0.92rem">三檔都是累積型股別，配息會自動再投資，不會直接發放現金股利——如果你需要定期現金流而不是資產累積，這點會影響你的選擇。</p>
+    </section>
+
+    <section id="risk">
+      <h2>三者的核心差異：你在承擔哪一種風險？</h2>
+      <p>三檔 ETF 的報酬來源都是短天期歐元利率，差異不在「賺多少」，而在「承擔什麼」。</p>
+      <div class="risk-note">
+        <p><strong>PRAB</strong> 直接持有歐元區多國公債，義大利公債占比約 27%，信用風險比純德債略高，但都在投資等級範圍內，換來的是三者中最低的費用率。</p>
+      </div>
+      <p style="margin-top:1rem"><strong>XEON / CSH2</strong> 不持有實體公債，而是用衍生性金融商品複製隔夜利率，因此多一層交易對手風險——如果 swap 對手銀行違約，投資人可能承受額外損失。這類產品的優勢是流動性極佳、規模龐大（約 €200 億），適合對交易對手風險不敏感、看重流動性的使用情境。</p>
+      <p style="margin-top:1rem"><strong>EXVM</strong> 只押注德國公債，是歐元區公債裡信用評等最高的標的，信用風險最低，代價是費用率三者中最高、規模也相對較小。</p>
+    </section>
+
+    <section id="faq">
+      <h2>常見問題</h2>
+
+      <div class="faq-item">
+        <h3>PRAB、XEON、EXVM 這三檔歐元短期公債 ETF 差在哪裡？</h3>
+        <p>三者都用來停泊歐元現金賺取短期利率，但底層資產與風險來源不同。PRAB 直接持有歐元區多國政府公債，費用率最低（0.05%）；XEON/CSH2 用衍生性合約複製歐元隔夜利率（€STR），不直接持有公債，因此多一層交易對手風險；EXVM 只持有德國政府公債，信用風險最低但費用略高（0.13%）。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>哪一檔歐元現金停泊 ETF 費用率最低？</h3>
+        <p>以總費用率（TER）比較，Amundi PRAB 目前最低，為 0.05%；Xtrackers XEON/CSH2 為 0.10%；iShares EXVM 為 0.13%。費用率最低不代表適合所有情境，仍需搭配風險偏好判斷，例如流動性需求或信用風險容忍度。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>什麼是合成複製（Synthetic Replication）？跟直接持有公債有什麼差別？</h3>
+        <p>合成複製是指 ETF 不直接持有標的資產，而是透過與銀行簽訂交換（swap）合約來複製指數報酬，例如 XEON/CSH2 複製歐元隔夜利率。這種做法流動性通常較好、規模較大，但投資人多承擔一層交易對手（swap 對手銀行）違約的風險。相對地，PRAB 與 EXVM 採實物複製，直接持有公債本身，沒有這層風險。UCITS 規範對合成複製 ETF 的單一交易對手曝險設有上限（不得超過基金淨值 10%），並搭配每日盯市與擔保品機制，這是這類產品在監管框架下的風險緩解設計。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>這類超短期政府公債 ETF 適合什麼用途？</h3>
+        <p>這類 ETF 主要用於停泊短期閒置現金、賺取接近央行政策利率的報酬，波動度極低，不是用來追求資本增值的工具。常見情境包括等待資金部署、緊急預備金停泊，或作為投資組合中的低風險緩衝部位。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>PRAB 的公債集中在哪些國家？信用風險高嗎？</h3>
+        <p>PRAB 持有歐元區多國政府公債，其中義大利公債占比約 27%，其餘分散在法國、德國、西班牙等國。整體仍屬投資等級，但信用風險略高於只押注德國公債的 EXVM，這是它費用率較低的部分原因。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>現在停泊歐元現金的報酬大概是多少？</h3>
+        <p>報酬直接跟著 ECB 存款機制利率走。該利率在 2023 年 9 月見頂於 4.00%，2024 年 6 月至 2025 年 6 月間累計降息八次、共 200 個基點，來到 2.00%，並持續維持在這個水準。因此這三檔 ETF 目前的年化報酬大致會落在略低於 2.00% 的區間（扣除各自費用率之後），會隨 ECB 未來的利率決策而變動，不是固定不變的數字。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>TER 費用率最低的 ETF，實際持有成本一定最低嗎？</h3>
+        <p>不一定。TER 只反映管理費用，實際持有成本還包含追蹤誤差（實際報酬跟標的之間的落差）與買賣價差。規模較小、成交量較低的 ETF，買賣價差可能較大，如果你的使用情境是頻繁進出而非長期持有，這部分成本可能抵銷掉 TER 較低帶來的優勢，建議搭配發行商公布的歷史追蹤誤差數據一起判斷。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>這三檔 ETF 都是累積型還是配息型？</h3>
+        <p>三檔目前主要股別都是累積型（Accumulating），意即利息收益會自動再投資到基金淨值裡，不會定期發放現金股利。如果你需要的是定期現金流而不是資產累積，這類產品的股別設計可能不符合你的需求，需要另外確認發行商是否有提供配息型股別。</p>
+      </div>
+    </section>
+
+    <section id="methodology">
+      <h2>資料來源與方法說明</h2>
+      <p>本頁的費用率、基金規模、複製方式等數據，整理自三檔 ETF 發行商（Amundi、Xtrackers/DWS、iShares/BlackRock）官網公布的公開說明書與事實表（Fact Sheet），以及 LSE、Xetra、Euronext 等交易所的公開掛牌資訊。基金規模與費用率會隨時間變動，本頁不會即時同步更新，讀者在做出實際決策前，務必直接查閱發行商官網當下最新公布的版本。</p>
+      <p>本站不接受任何發行商的贊助或置入，內容純粹為公開資訊的橫向整理，不構成投資建議。</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>本頁內容為公開市場資訊整理，非投資建議，作者不是持牌財務顧問。ETF 費用率、規模與持股結構會隨時間變動，實際投資決策前請以發行商官網公告的最新公開說明書為準。© 2026 EuroCash 觀測站</p>
+  </div>
+</footer>
+
+</body>
+</html>
